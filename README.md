@@ -12,4 +12,4 @@ I'm also new to Markdown, but I know how to do _this_ and **this**
 
 and I _think_ I know how to do [this][portfolio-link]
 
-[portfolio-link]: contrick.net
+[portfolio-link]: https://contrick.net
