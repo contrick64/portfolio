@@ -1,10 +1,25 @@
+import { nanoid } from "nanoid";
+
 export default function List(props) {
   const listElements = (
-    <ul className="main-list">
-      {props.data.map((li) => {
-        return <li>{li.value}</li>;
-      })}
-    </ul>
+    <div className="list">
+      {props.data.value && props.data.value}
+      {props.data.children && props.data.isOpen && (
+        <ul className="main-list">
+          {props.data.children.map((li) => {
+            return (
+              <li
+                key={nanoid()}
+                className={`${li.isOpen ? "open" : ""}`}
+                onClick={() => props.openList(li.id)}
+              >
+                <List data={li} openList={props.openList} />
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
   );
   return (
     <div>
