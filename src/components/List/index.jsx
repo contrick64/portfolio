@@ -1,5 +1,8 @@
 import { nanoid } from "nanoid";
 
+// THIS DOES NOT WORK, BECAUSE YOU CLICK THE CONTAINER ELEMENT
+// WHENEVER YOU CLICK THE INNER ELEMENT
+
 export default function List(props) {
   const listElements = (
     <div className="list">
