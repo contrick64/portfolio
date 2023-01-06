@@ -21,24 +21,41 @@ export default function App() {
               isOpen: false,
               children: [],
             },
+            {
+              id: 2,
+              value: "React 2",
+              isOpen: false,
+              children: [],
+            },
           ],
         },
         {
-          id: 1,
+          id: 8,
           value: "Design",
           isOpen: false,
-          children: [],
+          children: [
+            {
+              id: 6,
+              value: "Design 1",
+              isOpen: false,
+              children: [],
+            },
+          ],
         },
       ],
     });
   }, []);
 
-  function openList(id) {
+  function openList(e, id) {
+    e.stopPropagation();
     setState((prevState) => {
-      const newState = prevState.map((item) => {
+      const newChildren = prevState.children.map((item) => {
         if (item.id === id) return { ...item, isOpen: !item.isOpen };
         return item;
       });
+      const newState = { ...prevState, children: newChildren };
+
+      console.log(newState);
       return newState;
     });
   }

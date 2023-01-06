@@ -1,0 +1,17 @@
+li {
+  list-style: "• " outside;
+  
+  &::marker {
+    font-size: 1.2rem;
+    margin-right: 2px;
+    font-family: monospace;
+  }
+  
+  &.openable {
+    list-style: "+ " outside;
+  }
+
+  &.opened {
+    list-style: "– " outside;
+  }
+}

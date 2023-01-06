@@ -1,11 +1,12 @@
 import { nanoid } from "nanoid";
+import "./index.scss";
 
 // THIS DOES NOT WORK, BECAUSE YOU CLICK THE CONTAINER ELEMENT
 // WHENEVER YOU CLICK THE INNER ELEMENT
 
 export default function List(props) {
   const listElements = (
-    <div className="list">
+    <>
       {props.data.value && props.data.value}
       {props.data.children && props.data.isOpen && (
         <ul className="main-list">
@@ -13,8 +14,10 @@ export default function List(props) {
             return (
               <li
                 key={nanoid()}
-                className={`${li.isOpen ? "open" : ""}`}
-                onClick={() => props.openList(li.id)}
+                className={`${li.isOpen ? "opened " : ""} ${
+                  li.children.length ? "openable" : ""
+                }`}
+                onClick={(e) => props.openList(e, li.id)}
               >
                 <List data={li} openList={props.openList} />
               </li>
@@ -22,11 +25,7 @@ export default function List(props) {
           })}
         </ul>
       )}
-    </div>
+    </>
   );
-  return (
-    <div>
-      <div>{listElements}</div>
-    </div>
-  );
+  return <div className="list">{listElements}</div>;
 }
