@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import List from "./components/List";
 import "./App.scss";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import Project1 from "./Pages/Project1";
 
 export default function App() {
   const [state, setState] = useState([]);
@@ -62,8 +65,17 @@ export default function App() {
 
   return (
     <Container className="App">
-      Test text
-      <List data={state} openList={openList} />
+      <Row>
+        <Col>
+          <List data={state} openList={openList} />
+        </Col>
+        <Col>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project1" element={<Project1 />} />
+          </Routes>
+        </Col>
+      </Row>
     </Container>
   );
 }

@@ -1,8 +1,9 @@
 import { nanoid } from "nanoid";
 import "./index.scss";
 
-// THIS DOES NOT WORK, BECAUSE YOU CLICK THE CONTAINER ELEMENT
-// WHENEVER YOU CLICK THE INNER ELEMENT
+//Solution?
+//generate list from folder tree?
+//  -use url params to generate routes?
 
 export default function List(props) {
   const listElements = (
