@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import List from "./components/List";
-import "./App.scss";
+import { nanoid } from "nanoid";
+import { lazy, useEffect, useList, useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Layout from "./components/Layout";
+import Project from "./components/Project";
 import Home from "./Pages/Home";
-import Project1 from "./Pages/Project1";
 
 export default function App() {
-  const [state, setState] = useState([]);
+  const [list, setList] = useState({});
 
   useEffect(() => {
-    setState({
+    const testList = {
       isOpen: true,
       children: [
         {
@@ -21,12 +21,14 @@ export default function App() {
             {
               id: 1,
               value: "React 1",
+              path: "Project1",
               isOpen: false,
               children: [],
             },
             {
               id: 2,
               value: "React 2",
+              path: "Project2",
               isOpen: false,
               children: [],
             },
@@ -46,36 +48,30 @@ export default function App() {
           ],
         },
       ],
-    });
+    };
+    setList(testList);
   }, []);
 
   function openList(e, id) {
     e.stopPropagation();
-    setState((prevState) => {
-      const newChildren = prevState.children.map((item) => {
+    setList((prevList) => {
+      const newChildren = prevList.children.map((item) => {
         if (item.id === id) return { ...item, isOpen: !item.isOpen };
         return item;
       });
-      const newState = { ...prevState, children: newChildren };
-
-      console.log(newState);
-      return newState;
+      const newList = { ...prevList, children: newChildren };
+      return newList;
     });
   }
 
   return (
-    <Container className="App">
-      <Row>
-        <Col>
-          <List data={state} openList={openList} />
-        </Col>
-        <Col>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project1" element={<Project1 />} />
-          </Routes>
-        </Col>
-      </Row>
-    </Container>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Layout list={list} openList={openList} />}>
+          <Route index element={<Home />} />
+          <Route path="/:id" element={<Project />} />
+        </Route>
+      </Routes>
+    </div>
   );
 }

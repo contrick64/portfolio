@@ -1,14 +1,15 @@
 import { nanoid } from "nanoid";
+import { Link } from "react-router-dom";
 import "./index.scss";
-
-//Solution?
-//generate list from folder tree?
-//  -use url params to generate routes?
 
 export default function List(props) {
   const listElements = (
     <>
-      {props.data.value && props.data.value}
+      {props.data.value && props.data.path ? (
+        <Link to={props.data.path}>{props.data.value}</Link>
+      ) : (
+        props.data.value
+      )}
       {props.data.children && props.data.isOpen && (
         <ul className="main-list">
           {props.data.children.map((li) => {
