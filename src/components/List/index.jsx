@@ -11,7 +11,7 @@ export default function List(props) {
         props.data.value
       )}
       {props.data.children && props.data.isOpen && (
-        <ul className="main-list">
+        <ul>
           {props.data.children.map((li) => {
             return (
               <li
