@@ -1,0 +1,45 @@
+{
+  "isOpen": true,
+  "children": [
+    {
+      "id": 0,
+      "value": "React",
+      "isOpen": false,
+      "children": [
+        {
+          "id": 1,
+          "value": "React 1",
+          "path": "Project1",
+          "isOpen": false,
+          "children": [
+
+          ]
+        },
+        {
+          "id": 2,
+          "value": "React 2",
+          "path": "Project2",
+          "isOpen": false,
+          "children": [
+
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "value": "Design",
+      "isOpen": false,
+      "children": [
+        {
+          "id": 6,
+          "value": "Design 1",
+          "isOpen": false,
+          "children": [
+
+          ]
+        }
+      ]
+    }
+  ]
+}

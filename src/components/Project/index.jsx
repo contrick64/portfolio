@@ -1,7 +1,21 @@
+import { lazy, Suspense, useState } from "react";
 import { useParams } from "react-router-dom";
-import Project2 from "../../Pages/Project2";
 
 export default function Project(props) {
   const { id } = useParams();
-  return <Project2></Project2>;
+  const Content = lazy(() => {
+    try {
+      const page = import(`../../Pages/${id}`);
+      return page;
+    } catch {
+      return import("../../Pages/NotFound");
+    }
+  });
+  return (
+    <>
+      <Suspense>
+        <Content />
+      </Suspense>
+    </>
+  );
 }
