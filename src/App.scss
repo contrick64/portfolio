@@ -1,6 +1,81 @@
-$theme-colors: (
+$custom-colors: (
   "primary": #6cb3ff,
   "secondary": #1a5e49
 );
 
 @import "bootstrap/scss/bootstrap";
+
+$theme-colors: map-merge($custom-colors, $theme-colors);
+
+#leftcol {
+  border-right: 1px solid $gray-400;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.hide-md {
+  display: none;
+}
+
+#collapse-list {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid $gray-400;
+}
+
+#title {
+  margin-left: 0.5rem;
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#rightcol {
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html,body {
+    overflow: hidden;
+  }
+  .col {
+    max-height: 100vh;
+  }
+  #rightcol {
+    overflow-y: auto;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .hide-md {
+    display: block;
+  }
+
+  #leftcol{ 
+    height: unset;
+  }
+  .navbar {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+  }
+
+  .collapse.show, .collapsing {
+    background-color: $gray-200;
+  }
+  
+  #title {
+    margin-left: 0;
+  }
+}

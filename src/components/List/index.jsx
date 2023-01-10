@@ -29,5 +29,5 @@ export default function List(props) {
       )}
     </>
   );
-  return <div className="list">{listElements}</div>;
+  return <>{listElements}</>;
 }

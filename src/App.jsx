@@ -3,52 +3,34 @@ import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Layout from "./components/Layout";
 import Project from "./components/Project";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home.mdx";
+import config from "./Pages/config.yaml";
+import { nanoid } from "nanoid";
 
 export default function App() {
+  console.log("updated");
   const [list, setList] = useState({});
 
   useEffect(() => {
-    const testList = {
+    function recursiveId(array) {
+      return array.map((item) => {
+        let myChildren = [];
+        if (item.children) {
+          myChildren = recursiveId(item.children);
+        }
+        return {
+          ...item,
+          id: nanoid(),
+          isOpen: false,
+          children: myChildren,
+        };
+      });
+    }
+    const newConfig = recursiveId(config);
+    setList({
       isOpen: true,
-      children: [
-        {
-          id: 0,
-          value: "React",
-          isOpen: false,
-          children: [
-            {
-              id: 1,
-              value: "React 1",
-              path: "Project1",
-              isOpen: false,
-              children: [],
-            },
-            {
-              id: 2,
-              value: "React 2",
-              path: "Project2",
-              isOpen: false,
-              children: [],
-            },
-          ],
-        },
-        {
-          id: 8,
-          value: "Design",
-          isOpen: false,
-          children: [
-            {
-              id: 6,
-              value: "Design 1",
-              isOpen: false,
-              children: [],
-            },
-          ],
-        },
-      ],
-    };
-    setList(testList);
+      children: newConfig,
+    });
   }, []);
 
   function openList(e, id) {
@@ -71,6 +53,7 @@ export default function App() {
           <Route path="/:id" element={<Project />} />
         </Route>
       </Routes>
+      {/* <pre>{JSON.stringify(list, null, 2)}</pre> */}
     </div>
   );
 }
