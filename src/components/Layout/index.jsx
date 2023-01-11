@@ -57,7 +57,7 @@ export default function Layout(props) {
           <Collapse in={open}>
             <div>
               <Container id="collapse-list">
-                <List data={props.list} openList={props.openList} />
+                <List />
               </Container>
             </div>
           </Collapse>
