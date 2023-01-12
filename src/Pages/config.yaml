@@ -4,6 +4,10 @@
       children:
         - value: Tenzies
           path: Project1
+    - value: Misc.
+      children:
+        - value: Random Poetry Generator
+          path: RandomPoetry
 
 - value: Design
   children:
