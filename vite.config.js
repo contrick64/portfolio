@@ -5,15 +5,5 @@ import yaml from "@rollup/plugin-yaml";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  server: {
-    proxy: {
-      "/api": {
-        target: "https://www.croxyproxy.net/",
-        changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
-  },
   plugins: [{ enforce: "pre", ...mdx() }, yaml(), react()],
 });
