@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Button, Collapse, Container } from "react-bootstrap";
 import { Route, Routes } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
 import "./App.scss";
 import Layout from "./components/Layout";
 import Project from "./components/Project";
@@ -14,7 +16,6 @@ export default function App() {
           <Route path="/:id" element={<Project />} />
         </Route>
       </Routes>
-      {/* <pre>{JSON.stringify(list, null, 2)}</pre> */}
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import { nanoid } from "nanoid";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import config from "../../Pages/config.yaml";
 import ListItem from "../ListItem";
 
-export default function List() {
+export default memo(function List() {
+  console.log("listRender");
   const [list, setList] = useState(() => ({
     isOpen: true,
     children: config,
@@ -58,11 +59,9 @@ export default function List() {
       ...prev,
       children: recursiveId(list),
     }));
-    console.log(list);
   }, []);
-  console.log("rendered list");
   return (
     <ListItem data={list} openList={openList} />
     // <pre>{JSON.stringify(list, null, 2)}</pre>
   );
-}
+});
