@@ -4,7 +4,6 @@ import config from "../../Pages/config.yaml";
 import ListItem from "../ListItem";
 
 export default memo(function List() {
-  console.log("listRender");
   const [list, setList] = useState(() => ({
     isOpen: true,
     children: config,
@@ -13,7 +12,6 @@ export default memo(function List() {
   function openList(e, path) {
     e.stopPropagation();
     setList((prevList) => getNestedUpdate(prevList, path));
-    console.log("openList");
   }
 
   const getNestedUpdate = (state, path) => {
@@ -22,7 +20,7 @@ export default memo(function List() {
     if (idArray.length === 0) {
       return {
         ...state,
-        isOpen: !state.isOpen,
+        isOpen: state.children.length > 0 && !state.isOpen,
       };
     }
 
@@ -33,7 +31,7 @@ export default memo(function List() {
     return {
       ...state,
       children: state.children.map((item) =>
-        item.id === level ? getNestedUpdate(item, newPath) : item
+        item.id === level ? getNestedUpdate(item, newPath) : { ...item }
       ),
     };
   };
