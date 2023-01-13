@@ -79,3 +79,28 @@ $theme-colors: map-merge($custom-colors, $theme-colors);
     margin-left: 0;
   }
 }
+
+img {
+  max-width: 100%;
+}
+
+a {
+  overflow: hidden;
+  &>img {
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(105%);
+      opacity: 0.5;
+    }
+  }
+}
+
+.cardbox {
+  display: flex;
+  gap: 1rem;
+  margin: 3rem;  
+
+  .card {
+    max-width: 13rem;
+  }
+}

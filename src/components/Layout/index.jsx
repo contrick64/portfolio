@@ -63,7 +63,7 @@ export default function Layout(props) {
           </Collapse>
         </Col>
         <Col id="rightcol">
-          <Container>
+          <Container id="#project-window">
             <Outlet />
           </Container>
         </Col>

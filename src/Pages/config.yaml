@@ -2,8 +2,14 @@
   children:
     - value: React
       children:
-        - value: Tenzies
-          path: Project1
+        - value: Games
+          path: Games
+        - value: Portfolio (this website!)
+          path: Portfolio
+    - value: PHP
+      children:
+        - value: M.O.R.A.C.E.
+          path: Morace
     - value: Misc.
       children:
         - value: Random Poetry Generator
