@@ -36,11 +36,19 @@ export default function Layout(props) {
         <Col id="leftcol" md={4}>
           <Navbar>
             <Container>
-              <Navbar.Brand>
-                <Link id="title" to="/">
-                  Connor Murphy
-                </Link>
-              </Navbar.Brand>
+              <div className="brandholder">
+                <Navbar.Brand>
+                  <Link id="title" to="/">
+                    Connor Murphy
+                  </Link>
+                </Navbar.Brand>
+                <p>Designer, Artist, Developer, etc.</p>
+                <p>
+                  <a href="mailto:connor@murphysites.com">
+                    connor@murphysites.com
+                  </a>
+                </p>
+              </div>
               <div className="hide-md">
                 <Button
                   className="p-0 px-1"
