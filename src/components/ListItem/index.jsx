@@ -23,9 +23,9 @@ export default memo(function ListItem(props) {
                   className={`${li.isOpen ? "opened " : ""} ${
                     li.children && li.children.length > 0 ? "openable" : ""
                   }`}
-                  onClick={(e) => props.openList(e, li.idPath)}
+                  onClick={(e) => props.openListItem(e, li.idPath)}
                 >
-                  <ListItem data={li} openList={props.openList} />
+                  <ListItem data={li} openListItem={props.openListItem} />
                 </li>
               );
             })}
