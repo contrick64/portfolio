@@ -48,7 +48,6 @@ export default memo(function List() {
           ...item,
           id: newId,
           idPath: idPath,
-          isOpen: false,
           children: myChildren,
         };
       });
