@@ -4,7 +4,7 @@ import { Collapse } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
-function ListItem(props) {
+export default memo(function ListItem(props) {
   return (
     <>
       {props.data.value &&
@@ -19,16 +19,13 @@ function ListItem(props) {
             {props.data.children.map((li) => {
               return (
                 <li
+                  key={li.id}
                   className={`${li.isOpen ? "opened " : ""} ${
                     li.children && li.children.length > 0 ? "openable" : ""
                   }`}
                   onClick={(e) => props.openList(e, li.idPath)}
                 >
-                  <MemoListItem
-                    key={li.id}
-                    data={li}
-                    openList={props.openList}
-                  />
+                  <ListItem data={li} openList={props.openList} />
                 </li>
               );
             })}
@@ -37,8 +34,4 @@ function ListItem(props) {
       )}
     </>
   );
-}
-
-const MemoListItem = memo(ListItem);
-
-export default MemoListItem;
+});

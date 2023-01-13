@@ -9,7 +9,7 @@ export default memo(function List() {
     children: config,
   }));
 
-  function openList(e, path) {
+  function openListItem(e, path) {
     e.stopPropagation();
     setList((prevList) => getNestedUpdate(prevList, path));
   }
@@ -59,7 +59,9 @@ export default memo(function List() {
     }));
   }, []);
   return (
-    <ListItem data={list} openList={openList} />
-    // <pre>{JSON.stringify(list, null, 2)}</pre>
+    <>
+      <ListItem key="topList" data={list} openListItem={openListItem} />
+      {/* <pre>{JSON.stringify(list, null, 2)}</pre> */}
+    </>
   );
 });
