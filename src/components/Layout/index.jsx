@@ -32,8 +32,8 @@ export default function Layout(props) {
 
   return (
     <Container fluid>
-      <Row>
-        <Col id="leftcol" md={4}>
+      <Row className="justify-content-md-center">
+        <Col id="leftcol" md={4} xxl={3}>
           <Navbar>
             <Container>
               <div className="brandholder">
@@ -70,8 +70,8 @@ export default function Layout(props) {
             </div>
           </Collapse>
         </Col>
-        <Col id="rightcol">
-          <Container id="#project-window">
+        <Col md={8} xl={6} xxl={5} id="rightcol">
+          <Container id="project-window">
             <Outlet />
           </Container>
         </Col>
