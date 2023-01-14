@@ -3,6 +3,7 @@
   width: 100%;
   flex-wrap: wrap;
   font-size: 0.8rem;
+  line-height: 1em;
   .icon {
     text-align: center;
     width: 4.5rem;
@@ -11,6 +12,9 @@
     }
     svg, img {
       width: 3rem;
+    }
+    p {
+      margin-top: 0.5em;
     }
   }
 }
