@@ -1,5 +1,5 @@
-$primary: #6cb3ff;
-$secondary: #acc4ce;
+$primary: #5793d3;
+$secondary: #b88ae4;
 $light: #ecedee;
 
 @import "bootstrap/scss/bootstrap";
@@ -45,11 +45,11 @@ body {
 
 .navbar {
   border-bottom: 1px solid $gray-400;
+  color: white;
+  background: linear-gradient(60deg, $primary 30%,$secondary);
 }
 
 #title {
-  margin-left: 0.5rem;
-  color: black;
   font-weight: 900;
   text-decoration: none;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -70,6 +70,17 @@ body {
     }
     >:last-child {
       padding-bottom: 3rem;
+    }
+  }
+}
+@media print{
+  .collapse {
+    display: none;
+  }
+  .brandholder {
+    color: #000;
+    a {
+      color: #000;
     }
   }
 }
@@ -145,6 +156,12 @@ a {
   }
 }
 
-.brandholder p {
-  margin: 0 0.6rem;
+.brandholder {
+  padding: 0.5rem;
+  a {
+    color: white;
+  }
+  p {
+    margin: 0;
+  }
 }

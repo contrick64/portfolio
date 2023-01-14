@@ -44,7 +44,7 @@ export default function Layout(props) {
                 </Navbar.Brand>
                 <p>Designer, Artist, Developer, etc.</p>
                 <p>
-                  <a href="mailto:connor@murphysites.com">
+                  <a className="link" href="mailto:connor@murphysites.com">
                     connor@murphysites.com
                   </a>
                 </p>
@@ -52,7 +52,7 @@ export default function Layout(props) {
               <div className="hide-md">
                 <Button
                   className="p-0 px-1"
-                  variant="outline-dark"
+                  variant="outline-light"
                   onClick={() => setOpen(!open)}
                   aria-controls="collapse-list"
                   aria-expanded={open}
