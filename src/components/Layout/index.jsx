@@ -71,9 +71,9 @@ export default function Layout(props) {
           </Collapse>
         </Col>
         <Col md={8} xl={6} xxl={5} id="rightcol">
-          <Container id="project-window">
+          <div className="projectholder">
             <Outlet />
-          </Container>
+          </div>
         </Col>
       </Row>
     </Container>

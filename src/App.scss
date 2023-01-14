@@ -1,14 +1,11 @@
-$custom-colors: (
-  "primary": #6cb3ff,
-  "secondary": #1a5e49
-);
+$primary: #6cb3ff;
+$secondary: #acc4ce;
+$light: #ecedee;
 
 @import "bootstrap/scss/bootstrap";
 
-$theme-colors: map-merge($custom-colors, $theme-colors);
-
 body {
-  background-color: rgb(224, 231, 230);
+  background-color: $light;
 }
 #leftcol,#rightcol {
   background-color: white;
@@ -59,9 +56,21 @@ body {
 }
 
 #rightcol {
-  .container {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+  padding: 0;
+  .projectholder {
+    ul {
+    margin-left: 1.5rem;
+    }
+    >:not(.container-fluid) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    >:first-child {
+      padding-top: 1rem;
+    }
+    >:last-child {
+      padding-bottom: 3rem;
+    }
   }
 }
 
@@ -73,6 +82,7 @@ body {
     max-height: 100vh;
   }
   #rightcol {
+    height: 100vh;
     overflow-y: auto;
   }
 }
