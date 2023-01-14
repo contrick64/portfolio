@@ -63,7 +63,7 @@ export default function Layout(props) {
             </Container>
           </Navbar>
           <Collapse in={open}>
-            <div>
+            <div className="nav-tray">
               <Container id="collapse-list">
                 <List />
               </Container>

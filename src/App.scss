@@ -82,15 +82,27 @@ body {
     display: block;
   }
 
+  $my-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px;
+
   #leftcol{ 
     height: unset;
+    z-index: 5;
+    border: none;
+    box-shadow: $my-shadow;
   }
+  
   .navbar {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+    border: none;
+    box-shadow: $my-shadow;
+  }
+
+  #collapse-list {
+    font-size: 1.25rem;
+    padding-bottom: 1.3rem;
   }
 
   .collapse.show, .collapsing {
-    background-color: $gray-200;
+    background-color: $gray-100;
   }
   
   #title {
