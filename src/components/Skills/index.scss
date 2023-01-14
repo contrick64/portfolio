@@ -1,0 +1,16 @@
+.iconholder {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  .icon {
+    text-align: center;
+    width: 4.5rem;
+    i {
+      font-size: 3rem;
+    }
+    svg, img {
+      width: 3rem;
+    }
+  }
+}
