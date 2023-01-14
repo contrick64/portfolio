@@ -10,6 +10,8 @@
       children:
         - value: M.O.R.A.C.E.
           path: Morace
+        - value: SAPA TV Website
+          path: Sapa
     - value: Misc.
       children:
         - value: Random Poetry Generator
@@ -21,3 +23,6 @@
       path: PackingList
 
 - value: Music
+  children:
+    - value: Bleach Bloys
+      path: BleachBloys
