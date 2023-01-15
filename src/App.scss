@@ -1,5 +1,9 @@
-$primary: #5793d3;
-$secondary: #b88ae4;
+$primary: #5b4abb;
+$secondary: #dba789;
+$accent: #e57bff;
+$primary: #be6836;
+$secondary: #aa1919;
+$accent: #ff893a;
 $light: #ecedee;
 
 @import "bootstrap/scss/bootstrap";
@@ -46,13 +50,35 @@ body {
 .navbar {
   border-bottom: 1px solid $gray-400;
   color: white;
-  background: linear-gradient(60deg, $primary 30%,$secondary);
+  background:
+    linear-gradient(
+      60deg,
+      $primary 50%,
+      darken($secondary,5%) 95%);
 }
 
 #title {
+  background: linear-gradient(
+    90deg,
+    saturate(lighten($accent,8%), 40%) 30%,
+    white 55%,
+  );
+  background-position: 50%;
+  background-size: 250%;
+  transition: background-position 0.5s;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2rem;
   text-decoration: none;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  z-index: 1;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  &:hover {
+    background-position: 0%;
+    transition: background-position 0.5s;
+  }
 }
 
 #rightcol {
@@ -62,11 +88,11 @@ body {
     margin-left: 1.5rem;
     }
     >:not(.container-fluid) {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.3rem;
     }
     >:first-child {
-      padding-top: 1rem;
+      padding-top: 1.3rem;
     }
     >:last-child {
       padding-bottom: 3rem;

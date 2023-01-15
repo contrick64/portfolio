@@ -39,7 +39,7 @@ export default function Layout(props) {
               <div className="brandholder">
                 <Navbar.Brand>
                   <Link id="title" to="/">
-                    Connor Murphy
+                    connor murphy
                   </Link>
                 </Navbar.Brand>
                 <p>Designer, Artist, Developer, etc.</p>
