@@ -1,6 +1,6 @@
 $primary: #5b4abb;
 $secondary: #dba789;
-$accent: #e57bff;
+$accent: #7b9eff;
 // $primary: #be6836;
 // $secondary: #aa1919;
 // $accent: #ff893a;
@@ -99,6 +99,48 @@ body {
     }
   }
 }
+
+img {
+  max-width: 100%;
+}
+
+a {
+  overflow: hidden;
+  color:darken($accent, 10%);
+  transition: color 0.2s;
+  &:hover{
+    color: darken($accent,40%);
+    transition: color 0.2s;
+  }
+  &>img {
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(105%);
+      opacity: 0.5;
+    }
+  }
+}
+
+.cardbox {
+  display: flex;
+  gap: 1rem;
+  margin: 3rem;  
+
+  .card {
+    max-width: 13rem;
+  }
+}
+
+.brandholder {
+  padding: 0.5rem;
+  a {
+    color: white;
+  }
+  p {
+    margin: 0;
+  }
+}
+
 @media print{
   .collapse {
     display: none;
@@ -154,40 +196,5 @@ body {
   
   #title {
     margin-left: 0;
-  }
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  overflow: hidden;
-  &>img {
-    transition: all 0.5s;
-    &:hover {
-      transform: scale(105%);
-      opacity: 0.5;
-    }
-  }
-}
-
-.cardbox {
-  display: flex;
-  gap: 1rem;
-  margin: 3rem;  
-
-  .card {
-    max-width: 13rem;
-  }
-}
-
-.brandholder {
-  padding: 0.5rem;
-  a {
-    color: white;
-  }
-  p {
-    margin: 0;
   }
 }
