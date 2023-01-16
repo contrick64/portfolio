@@ -1,5 +1,5 @@
-$primary: #6ce299;
-$secondary: #ffaf81;
+$primary: #105c8f;
+$secondary: #e48b58;
 $accent: #7b9eff;
 // $primary: #be6836;
 // $secondary: #aa1919;
@@ -9,7 +9,11 @@ $light: #ecedee;
 @import "bootstrap/scss/bootstrap";
 
 body {
-  background-color: $light;
+  background: linear-gradient(90deg,
+    lighten(desaturate($primary, 60%), 60%),
+    lighten(desaturate($primary, 60%), 45%),
+    lighten(desaturate($primary, 60%), 60%),
+  );
 }
 #leftcol,#rightcol {
   background-color: white;
@@ -104,6 +108,19 @@ a {
   }
 }
 
+.brandholder {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  a {
+    color: inherit;
+  }
+  p {
+    margin: 0;
+  }
+}
+
 .cardbox {
   display: flex;
   gap: 1rem;
@@ -123,17 +140,6 @@ a {
   }
 }
 
-.brandholder {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  a {
-    color: inherit;
-  }
-  p {
-    margin: 0;
-  }
-}
 
 @media print{
   .collapse {
