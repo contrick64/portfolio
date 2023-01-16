@@ -1,8 +1,10 @@
 import { Link, Outlet } from "react-router-dom";
-import { Button, Col, Collapse, Container, Navbar, Row } from "react-bootstrap";
+import { Button, Col, Collapse, Container, Row } from "react-bootstrap";
 import List from "../List";
 import { useEffect, useState } from "react";
 import ListIcon from "../../img/ListIcon.jsx";
+import CPMLogo from "../CPMLogo";
+import MyNav from "../MyNav";
 
 export default function Layout(props) {
   const [dimensions, setDimensions] = useState({
@@ -34,34 +36,7 @@ export default function Layout(props) {
     <Container fluid>
       <Row className="justify-content-md-center">
         <Col id="leftcol" md={4} xxl={3}>
-          <Navbar>
-            <Container>
-              <div className="brandholder">
-                <Navbar.Brand>
-                  <Link id="title" to="/">
-                    connor murphy
-                  </Link>
-                </Navbar.Brand>
-                <p>Designer, Artist, Developer, etc.</p>
-                <p>
-                  <a className="link" href="mailto:connor@murphysites.com">
-                    connor@murphysites.com
-                  </a>
-                </p>
-              </div>
-              <div className="hide-md">
-                <Button
-                  className="p-0 px-1"
-                  variant="outline-light"
-                  onClick={() => setOpen(!open)}
-                  aria-controls="collapse-list"
-                  aria-expanded={open}
-                >
-                  <ListIcon />
-                </Button>
-              </div>
-            </Container>
-          </Navbar>
+          <MyNav />
           <Collapse in={open}>
             <div className="nav-tray">
               <Container id="collapse-list">
