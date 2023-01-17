@@ -1,15 +1,25 @@
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Skills from "../components/Skills";
 import CPMLogo from "../components/CPMLogo";
+import AsciiCat from "../components/AsciiCat";
 
-# Hi, I'm Connor Murphy
+<Row>
+  <Col className='ascii-feature' sm={4}>
+    <AsciiCat />
+  </Col>
 
-I consider myself to be, first and foremost, a **critical thinker**
-and a **problem solver**. However, in my research to find what makes
-a good portfolio, I kept seeing the advice: _"Make sure to prominently
-display your desired job title!"_
+  <Col>
+    # Hi, I'm Connor Murphy
 
-So here are a few, with my current specializations bolded:
+    \<-- This is my ascii cat morace, try petting him!
+
+    I'm a _**frontend developer**_ and _**web designer**_,
+    but I have a wide variety of applicable skills
+    from my employment experience and personal projects.
+  </Col>
+</Row>
+
+{/* So here are a few, with my current specializations bolded:
 
 - **Frontend Developer**
 - UI/UX/Print/**Web Designer**
@@ -17,7 +27,7 @@ So here are a few, with my current specializations bolded:
 - Public Access Television Production Coordinator
 - Radio Board Operator
 - Art Director
-- Session Musician
+- Session Musician */}
 
 I'm especially excited about working for **non-profits** and other
 groups whose work focuses on helping people.
