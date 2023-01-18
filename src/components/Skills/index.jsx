@@ -59,5 +59,5 @@ export default function Skills(props) {
       return icon;
     } else return;
   });
-  return <div className="iconholder">{iconElements}</div>;
+  return <div className={`iconholder`}>{iconElements}</div>;
 }
