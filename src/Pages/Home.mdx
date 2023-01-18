@@ -2,22 +2,24 @@ import { Container, Row, Col } from "react-bootstrap";
 import Skills from "../components/Skills";
 import CPMLogo from "../components/CPMLogo";
 import AsciiCat from "../components/AsciiCat";
+import CardTemplate from '../components/CardTemplate';
+import ImgCard from '../components/ImgCard';
+import CardBox from '../components/CardBox';
+import morace from "../img/moraceScrnsht.png";
 
-<Row>
-  <Col className='ascii-feature' sm={4}>
-    <AsciiCat />
-  </Col>
+<div className='ascii-feature float-left text-secondary p-2'>
+  <AsciiCat />
+</div>
+# Hi, I'm Connor Murphy
 
-  <Col>
-    # Hi, I'm Connor Murphy
+\<-- This is my ascii cat Morace, try petting him!
 
-    \<-- This is my ascii cat morace, try petting him!
-
-    I'm a _**frontend developer**_ and _**web designer**_,
-    but I have a wide variety of applicable skills
-    from my employment experience and personal projects.
-  </Col>
-</Row>
+I'm a **frontend developer** and **web designer**,
+but I bring to the table a unique perspective informed
+by a multitude of work experiences. I have worn quite a few
+metaphorical hats, including creative roles in film, radio,
+music, design, and most recently as a librarian. That said,
+I must stress that _I do not actually wear hats._
 
 {/* So here are a few, with my current specializations bolded:
 
@@ -29,20 +31,45 @@ import AsciiCat from "../components/AsciiCat";
 - Art Director
 - Session Musician */}
 
-I'm especially excited about working for **non-profits** and other
-groups whose work focuses on helping people.
+I'm looking to do high quality creative work for/with high quality
+creative people. I'm especially excited about connecting with **non-profits**
+and other groups whose work focuses on helping people.
 
-<Container fluid className='bg-light pb-2 pt-3 px-5 my-4'>
+<CardBox>
+  <ImgCard
+    live="https://moracethechat.com"
+    path='morace'
+    github='github.com'
+    imgSrc={morace}
+    title="M.O.R.A.C.E."
+    text="PHP site displaying MySQL data about album releases"
+  />
+  <ImgCard
+    live="https://moracethechat.com"
+    path='morace'
+    imgSrc='https://loremflickr.com/320/240/site'
+    title="Fake Test"
+    text="this project is fake"
+  />
+  <ImgCard
+    live="https://moracethechat.com"
+    imgSrc='https://loremflickr.com/320/240/art'
+    title="Test Proj"
+    text="this project is fake"
+  />
+  <ImgCard
+    imgSrc='https://loremflickr.com/320/240/what'
+    title="What's this?"
+    text="this project is fake"
+  />
+</CardBox>
+
+<Container fluid className='bg-primary text-white pb-2 pt-3 px-5 my-4'>
 ### Skills and Competencies
 ---
+I _love_ to learn. Along with the specialties listed below, I have
+spent a lot of time learning about and trying to practice **web
+accessibility**.
 
 <Skills variant='plain' />
 </Container>
-
-I have spent a lot of time learning all of these roles and skills,
-working in each and every one of them in varying capacities. I
-have professional experience as a librarian, graphic designer, web
-designer, radio station general manager, and public access intern. The other roles I've listed
-have been learned through countless hours of personal project work.
-Some of that work is listed here on my website, so take a look around!
-And shoot me an email if you have any questions.
