@@ -1,0 +1,64 @@
+.cardbox {
+  .img-card {
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+    transition: transform 0.2s;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top left;
+    }
+    .img-card-hover {
+      opacity: 0;
+      transition: opacity 0.2s;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: white;
+    }
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s;
+      .img-card-hover {
+        opacity: 1;
+        transition: opacity 0.2s;
+      }
+    }
+    .img-card-hover-content {
+      position: relative;
+      margin: 1rem;
+    }
+    .buttonholder {
+      width: 100%;
+      display: flex;
+      position: absolute;
+      bottom: 1rem;
+      padding: 0 1rem;
+      justify-content: space-around;
+      a {
+        padding: 0.2em 0.4em;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .card {
+    overflow: hidden;
+    height: 100%;
+
+    img.clickable {
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(105%);
+        opacity: 0.5;
+      }
+    }
+  }
+}
