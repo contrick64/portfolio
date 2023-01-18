@@ -1,10 +1,12 @@
-$primary: #105c8f;
-$secondary: #e48b58;
-$accent: #7b9eff;
+$primary: #3e7eb9;
+$secondary: #d14d00;
+$accent: #bcceff;
 // $primary: #be6836;
 // $secondary: #aa1919;
 // $accent: #ff893a;
-$light: #ecedee;
+$light: #e1e2e2;
+
+$margin: 1.5rem;
 
 @import "bootstrap/scss/bootstrap";
 
@@ -19,6 +21,24 @@ body {
 #leftcol,
 #rightcol {
   background-color: white;
+}
+
+strong {
+  font-weight: 500;
+  color: $secondary;
+}
+
+.bg-primary,
+.bg-secondary {
+  strong {
+    color: $accent;
+  }
+}
+
+.float-left {
+  float: left;
+  margin: 0 1rem;
+  margin-left: $margin;
 }
 
 #fixedBottomButton {
@@ -86,20 +106,20 @@ body {
 }
 
 #rightcol {
+  $hyphens: auto;
+  -ms-hyphens: $hyphens;
+  -webkit-hyphens: $hyphens;
+  hyphens: $hyphens;
   padding: 0;
+  padding-top: 1.3rem;
+  padding-bottom: 3rem;
   .projectholder {
     ul {
       margin-left: 1.5rem;
     }
-    > :not(.container-fluid) {
+    main > :not(.container-fluid, .float-left) {
       padding-left: 1.5rem;
       padding-right: 1.3rem;
-    }
-    > :first-child {
-      padding-top: 1.3rem;
-    }
-    > :last-child {
-      padding-bottom: 3rem;
     }
     pre {
       line-height: 1.05rem;
@@ -129,25 +149,6 @@ a {
   }
   p {
     margin: 0;
-  }
-}
-
-.cardbox {
-  display: flex;
-  gap: 1rem;
-  margin: 3rem;
-
-  img {
-    transition: all 0.5s;
-
-    &:hover {
-      transform: scale(105%);
-      opacity: 0.5;
-    }
-  }
-
-  .card {
-    max-width: 13rem;
   }
 }
 
