@@ -10,6 +10,7 @@ export default function CPMLogo(props) {
       src={props.lightIsOn ? logoOn : logoOff}
       onMouseEnter={() => props.changeLight(true)}
       onMouseLeave={() => props.changeLight(false)}
+      alt="initials C p m in the shape of a lightbulb, which lights up when hovered"
     />
   );
 }
