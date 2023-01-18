@@ -17,11 +17,13 @@ export default memo(function ListItem(props) {
         <Collapse in={props.data.isOpen} appear unmountOnExit>
           <ul>
             {props.data.children.map((li) => {
+              const openable = li.children && li.children.length > 0;
               return (
                 <li
+                  tabIndex={openable ? "0" : ""}
                   key={li.id}
                   className={`${li.isOpen ? "opened " : ""} ${
-                    li.children && li.children.length > 0 ? "openable" : ""
+                    openable ? "openable" : ""
                   }`}
                   onClick={(e) => props.openListItem(e, li.idPath)}
                 >
