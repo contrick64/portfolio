@@ -1,4 +1,5 @@
-import CardTemplate from "../components/CardTemplate";
+import ImgCard from "../components/ImgCard";
+import CardBox from "../components/CardBox";
 import quizzical from "../img/quizzical.png";
 import tenzies from "../img/tenzies.png";
 
@@ -6,17 +7,17 @@ import tenzies from "../img/tenzies.png";
 
 Here are some games I've made in React while learning:
 
-<div class="cardbox">
-  <CardTemplate
+<CardBox>
+  <ImgCard
     href="https://contrick-tenzies.netlify.com"
-    src={tenzies}
+    imgSrc={tenzies}
     title="Tenzies"
     text="A game about rolling dice"
   />
-  <CardTemplate
+  <ImgCard
     href="https://contrick-quizzical.netlify.com"
-    src={quizzical}
+    imgSrc={quizzical}
     title="Quizzical"
     text="A game about quiz"
   />
-</div>
+</CardBox>
