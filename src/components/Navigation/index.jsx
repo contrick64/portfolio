@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ListIcon from "../../img/ListIcon";
 import CPMLogo from "../CPMLogo";
 import List from "../List";
+import SocialIcons from "../SocialIcons";
 
 export default function Navigation() {
   const [lightIsOn, setLightIsOn] = useState(false);
@@ -43,14 +44,7 @@ export default function Navigation() {
               />
             </Link>
           </Navbar.Brand>
-          <div id="subtitle">
-            <p>designer, artist, developer, etc.</p>
-            <p>
-              <a className="link" href="mailto:connor@murphysites.com">
-                connor@murphysites.com
-              </a>
-            </p>
-          </div>
+          <SocialIcons />
         </div>
         <div className="hide-md">
           <Button
