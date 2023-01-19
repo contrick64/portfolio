@@ -28,6 +28,14 @@ strong {
   color: $secondary;
 }
 
+p + h1 {
+  margin-top: 2rem;
+}
+
+h1 + :not(p) {
+  margin-top: 1rem;
+}
+
 .bg-primary,
 .bg-secondary {
   strong {
@@ -39,6 +47,11 @@ strong {
   float: left;
   margin: 0 1rem;
   margin-left: $margin;
+}
+.float-right {
+  float: right;
+  margin: 0 1rem;
+  margin-right: $margin;
 }
 
 #fixedBottomButton {
@@ -113,11 +126,19 @@ strong {
   padding: 0;
   padding-top: 1.3rem;
   padding-bottom: 3rem;
+
+  &:has(.banner-img) {
+    padding-top: 0;
+  }
+  .banner-img {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
   .projectholder {
     ul {
       margin-left: 1.5rem;
     }
-    main > :not(.container-fluid, .float-left) {
+    main > :not(.container-fluid, .float-left, .float-right) {
       padding-left: 1.5rem;
       padding-right: 1.3rem;
     }
@@ -134,7 +155,8 @@ img {
 a {
   overflow: hidden;
   color: darken($accent, 10%);
-  &:hover {
+  &:hover,
+  &:focus {
     color: darken($accent, 40%);
   }
 }
