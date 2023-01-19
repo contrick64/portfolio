@@ -1,6 +1,6 @@
-$primary: #3e7eb9;
-$secondary: #d14d00;
-$accent: #bcceff;
+$primary: #3675b0;
+$secondary: #cc4b00;
+$accent: #0011ff;
 // $primary: #be6836;
 // $secondary: #aa1919;
 // $accent: #ff893a;
@@ -42,8 +42,9 @@ h1 + :not(p) {
 
 .bg-primary,
 .bg-secondary {
+  color: white;
   strong {
-    color: $accent;
+    color: white;
   }
 }
 
@@ -182,10 +183,11 @@ img {
 
 a:not(:has(*)) {
   overflow: hidden;
-  color: darken($accent, 10%);
+  $color: $accent;
+  color: $color;
   &:hover,
   &:focus {
-    color: darken($accent, 40%);
+    color: darken($color, 20%);
   }
 }
 

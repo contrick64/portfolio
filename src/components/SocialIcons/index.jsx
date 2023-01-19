@@ -3,13 +3,13 @@ import "./styles.scss";
 export default function SocialIcons(props) {
   return (
     <div className="social-icons">
-      <a href="https://github.com/Contrick64">
+      <a href="https://github.com/Contrick64" title="Github">
         <i className="devicon-github-plain" />
       </a>
-      <a href="https://www.linkedin.com/in/contrick/">
+      <a href="https://www.linkedin.com/in/contrick/" title="LinkedIn">
         <i className="devicon-linkedin-plain" />
       </a>
-      <a href="mailto:connor@murphysites.com">
+      <a href="mailto:connor@murphysites.com" title="email">
         <svg
           fill="currentColor"
           viewBox="0 -9.31 56.223 56.223"

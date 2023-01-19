@@ -1,12 +1,12 @@
-import { Button, Card } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 export default function ImgCard(props) {
   return (
-    <div className="img-card">
-      <img src={props.imgSrc} />
+    <div className="img-card" {...props}>
+      <img src={props.imgSrc} alt={props.alt} />
       <div className="img-card-hover">
         <div className="img-card-hover-content">
-          <h4>{props.title}</h4>
+          <h3>{props.title}</h3>
           <p>{props.text}</p>
         </div>
         {(props.path || props.live || props.github) && (
