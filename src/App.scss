@@ -127,6 +127,7 @@ h1 + :not(p) {
 }
 
 #rightcol {
+  min-height: 100vh;
   $hyphens: auto;
   -ms-hyphens: $hyphens;
   -webkit-hyphens: $hyphens;
