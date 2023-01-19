@@ -1,29 +1,10 @@
 # portfolio
 
-This is my portfolio, which I am trying to redesign in React
+This is my portfolio made in React
 
-I'm pretty new to Github, but I'll try my best
+It's structured around a .yaml config file and .mdx content files, with a recursively
+generated navigation list, allowing me to nest as deeply as I'd like in the config.
 
-I'm also new to Markdown, but I know how to do _this_ and **this**
-
-```jsx
-function App() {
-  return (
-    <div className='and-this'>
-      {isKnown ? 'and this' : 'not this'}
-    </div>
-  )
-}
-```
-
-- and this
-  - and this
-    - and this
-
-1. apple
-1. aubergine
-1. apricot
-
-and I _think_ I know how to do [this][portfolio-link]
-
-[portfolio-link]: https://contrick.net
+I've really enjoyed working with MDX; it combines the ease of writing from markdown
+with the customizability of React components. I feel confident in my ability to quickly
+make changes to the content of my site.
