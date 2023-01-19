@@ -32,20 +32,6 @@ strong {
   color: $secondary;
 }
 
-#rightcol h1 + hr {
-  // margin-bottom: 1em;
-  // text-decoration: underline;
-  // text-underline-offset: 12px;
-  // text-decoration-thickness: 6px;
-  // text-decoration-color: $primary;
-  // line-height: 1.4em;
-  margin: 0 $margin $margin;
-  opacity: 1;
-  width: 60%;
-  max-width: 250px;
-  border-top: 8px $primary solid;
-}
-
 p + h1 {
   margin-top: 2rem;
 }
@@ -59,6 +45,10 @@ h1 + :not(p) {
   strong {
     color: $accent;
   }
+}
+
+.w-30 {
+  width: 30%;
 }
 
 .float-left {
@@ -175,6 +165,13 @@ h1 + :not(p) {
     p {
       padding: 0 1rem;
     }
+  }
+  h1 + hr {
+    margin: 0 $margin $margin;
+    opacity: 1;
+    width: 60%;
+    max-width: 250px;
+    border-top: 8px $primary solid;
   }
 }
 
