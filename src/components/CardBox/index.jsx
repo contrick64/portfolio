@@ -7,7 +7,10 @@ export default function CardBox(props) {
       <Row className="cardbox">
         {props.children.map((child) => {
           return (
-            <Col xs={6} className="mb-3">
+            <Col
+              xs={child.props.colSize ? child.props.colSize : 6}
+              className="mb-3"
+            >
               {child}
             </Col>
           );
