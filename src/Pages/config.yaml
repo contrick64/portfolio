@@ -1,28 +1,27 @@
 - value: Web
+  isOpen: true
   children:
-    - value: React
-      children:
-        - value: Games
-          path: Games
-        - value: Portfolio (this website!)
-          path: Portfolio
-    - value: PHP
-      children:
-        - value: M.O.R.A.C.E.
-          path: Morace
-        - value: SAPA TV Website
-          path: Sapa
-    - value: Misc.
-      children:
-        - value: Random Poetry Generator
-          path: RandomPoetry
+    - value: React Games
+      path: Games
+    - value: Portfolio (this website!)
+      path: Portfolio
+    - value: M.O.R.A.C.E.
+      path: Morace
+    - value: SAPA TV Website
+      path: Sapa
+    - value: Random Poetry Generator
+      path: RandomPoetry
 
 - value: Design
+  isOpen: true
   children:
     - value: Packing List Show Identity
       path: PackingList
+    - value: Ashby Library Signage
+    - value: School of Chalk
 
 - value: Music
+  isOpen: true
   children:
     - value: Bleach Bloys
       path: BleachBloys
