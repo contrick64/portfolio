@@ -1,4 +1,3 @@
-import email from "../../img/email.svg";
 import "./styles.scss";
 
 export default function SocialIcons(props) {
