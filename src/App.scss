@@ -163,6 +163,9 @@ h1 + :not(p) {
     pre {
       line-height: 1.05rem;
     }
+    .zoom-img:not(.float-left, .float-right) {
+      margin-bottom: 1rem;
+    }
   }
   blockquote {
     margin: 0 3rem;

@@ -3,7 +3,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 export default function (props) {
   return (
-    <div className={`zoom-image ${props.className}`} id={props.id}>
+    <div {...props} className={props.className + " zoom-img"}>
       <Zoom>
         <img src={props.src} alt={props.alt} />
       </Zoom>
