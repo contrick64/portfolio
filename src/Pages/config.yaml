@@ -18,7 +18,11 @@
     - value: Packing List Show Identity
       path: PackingList
     - value: Ashby Library Signage
+      path: AshbyLibrary
     - value: School of Chalk
+      path: SchoolOfChalk
+    - value: Hank Typeface
+      path: Hank
 
 - value: Music
   isOpen: true
