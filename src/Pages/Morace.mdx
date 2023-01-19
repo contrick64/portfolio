@@ -1,21 +1,35 @@
 import moraceScrnsht from "../img/moraceScrnsht.png";
 import moraceCat from "../img/moraceCat.gif";
 import Image from "../components/Image";
+import {Container} from "react-bootstrap";
 
+<Container fluid className='banner-img'>
+  <Image src={moraceScrnsht} />
+</Container>
 # M.O.R.A.C.E. website
 
 [https://moracethechat.com](https://moracethechat.com)
 
-This is a website I made in PHP (and possibly the last PHP site
-I will make). It uses a MySQL database to access the data for each
-of the releases we have put out through our label.
+This is a website I made using **PHP** to query a **MySQL** database and list
+out the contents. It then queries the database whenever you click on
+a release, and shows you some of the details of that release.
 
-<Image src={moraceScrnsht} />
+## Challenges
 
-My favorite part of the site is the animated ASCII cat, which changes
-its keyframe as you click around.
+I'm planning to remake this site using React. After spending a lot of time
+in this project learning the limitations of PHP, especially in terms of
+security, I feel that there is a lot to improve. I'd like to bring
+this site up to date with my current workflow, and use it to learn about
+interacting with a **relational database** in React.
 
-<Image src={moraceCat} />
+<Image src={moraceCat} className='float-right' />
 
-Also, if you're up for some easter egg hunting, try inputting a famous
-cheat code on the home page...
+## Fun Stuff
+
+My favorite part of the site is the animated ASCII art cat, which changes
+its keyframe as you click around. I liked it so much that I recreated it
+for my portfolio. You can check it out on the <a href='/' target='_self'>
+homepage</a> if you missed it!
+
+Also, if you're up for some easter egg hunting, try inputting a certain
+famous video game cheat code on the M.O.R.A.C.E. home page...
