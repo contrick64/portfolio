@@ -1,12 +1,12 @@
 - value: Web
   isOpen: true
   children:
-    - value: React Games
-      path: Games
     - value: Portfolio (this website!)
       path: Portfolio
     - value: M.O.R.A.C.E.
       path: Morace
+    - value: React Games
+      path: Games
     - value: SAPA TV Website
       path: Sapa
     - value: Random Poetry Generator
