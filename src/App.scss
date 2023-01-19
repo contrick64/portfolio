@@ -23,6 +23,10 @@ body {
   background-color: white;
 }
 
+abbr {
+  text-underline-offset: 2px;
+}
+
 strong {
   font-weight: 500;
   color: $secondary;
