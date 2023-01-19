@@ -5,18 +5,18 @@ import Navigation from "../Navigation";
 export default function Layout(props) {
   return (
     <Container fluid>
-      <Row className="justify-content-md-center">
-        <Col id="leftcol" className="offset-xl-2" md={4} xxl={3}>
+      <Row>
+        <Col id="leftcol" md={4} xxl={3} className="offset-xl-1 offset-xxl-2">
           <header>
             <Navigation />
           </header>
         </Col>
         <Col
+          id="rightcol"
           md={8}
           xl={6}
           xxl={5}
-          className="offset-md-4 offset-xl-3"
-          id="rightcol"
+          className="offset-md-4 offset-xl-5"
         >
           <div className="projectholder">
             <main>
