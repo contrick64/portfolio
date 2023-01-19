@@ -2,24 +2,21 @@
 
 [https://github.com/Contrick64/portfolio](https://github.com/Contrick64/portfolio)
 
-Recursion? Yes.
 
-This website is all about recursion. It was a hard lesson, but it was
-well-learned. The site is built on a yaml config file that describes
-the nested navigation list you see here.
+This website is all about **recursion**. It was a hard lesson, but it was
+well-learned. The site is built on a **<abbr title="YAML Ain't Markup Language">
+YAML</abbr>** config file that describes the nested navigation list you see here.
 
 I wrote a function to go through the data recursively, giving everything
 a unique ID and other tweaks to make it a useful state, then renders it
 using a recursive component.
 
-The site then uses .MDX files to render each project page, which allows
-for easy editing without limiting customizability to just what markdown
-allows.
+The site then uses **<abbr title="Markdown with JSX">.MDX</abbr>** files to
+render each project page, which allows for easy editing without limiting
+customizability to just vanilla markdown.
 
-Some issues I needed to deal with include:
+## Challenges
 
-- Rendering only the toggled list item
-- Dynamically loading MDX files as components based on Route
-- Getting a handle on using git
-- Learning React (yes I learned React mostly to build
-  a portfolio in it, but also to be more hireable)
+My biggest challenge was dynamically loading .MDX files into the
+```<Layout>``` component based on the path. I used React Router to use the
+path in my component, and then lazy-loaded the corresponding .MDX file.

@@ -5,14 +5,20 @@ import AsciiCat from "../components/AsciiCat";
 import CardTemplate from '../components/CardTemplate';
 import ImgCard from '../components/ImgCard';
 import CardBox from '../components/CardBox';
+
+{/* images */}
 import morace from "../img/moraceScrnsht.png";
+import librarySign from '../img/libraryShelfSigns.jpg';
+import quizzical from '../img/quizzical.png';
+
+# Hi, I'm Connor Murphy
 
 <div className='ascii-feature float-left text-secondary p-2'>
   <AsciiCat />
 </div>
-# Hi, I'm Connor Murphy
+Before I introduce myself, I'd like you to meet my ASCII art
+cat, Morace. Try petting him!
 
-\<-- This is my ascii cat Morace, try petting him!
 
 I'm a **frontend developer** and **web designer**,
 but I bring to the table a unique perspective informed
@@ -49,22 +55,16 @@ and other groups whose work focuses on helping people.
     text="PHP site displaying MySQL data about album releases"
   />
   <ImgCard
-    live="https://moracethechat.com"
-    path='morace'
-    imgSrc='https://loremflickr.com/320/240/site'
-    title="Fake Test"
-    text="this project is fake"
+    path='AshbyLibrary'
+    imgSrc={librarySign}
+    title="Library Shelf Signs"
+    text="Wayfinding signage for the Ashby Free Public Library."
   />
   <ImgCard
-    live="https://moracethechat.com"
-    imgSrc='https://loremflickr.com/320/240/art'
-    title="Test Proj"
-    text="this project is fake"
-  />
-  <ImgCard
-    imgSrc='https://loremflickr.com/320/240/what'
-    title="What's this?"
-    text="this project is fake"
+    live="https://contrick-quizzical.netlify.com"
+    imgSrc={quizzical}
+    title="Quizzical"
+    text="React app that fetches Open Trivia Database questions"
   />
 </CardBox>
 
