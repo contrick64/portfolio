@@ -57,10 +57,5 @@ export default memo(function List() {
       children: recursiveId(list),
     }));
   }, []);
-  return (
-    <>
-      <ListItem key="topList" data={list} openListItem={openListItem} />
-      {/* <pre>{JSON.stringify(list, null, 2)}</pre> */}
-    </>
-  );
+  return <ListItem key="topList" data={list} openListItem={openListItem} />;
 });

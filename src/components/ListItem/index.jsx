@@ -20,14 +20,17 @@ export default memo(function ListItem(props) {
               const openable = li.children && li.children.length > 0;
               return (
                 <li
-                  tabIndex={openable ? "0" : ""}
                   key={li.id}
                   className={`${li.isOpen ? "opened " : ""} ${
                     openable ? "openable" : ""
                   }`}
-                  onClick={(e) => props.openListItem(e, li.idPath)}
                 >
-                  <ListItem data={li} openListItem={props.openListItem} />
+                  <button
+                    tabIndex={openable ? "0" : "-1"}
+                    onClick={(e) => props.openListItem(e, li.idPath)}
+                  >
+                    <ListItem data={li} openListItem={props.openListItem} />
+                  </button>
                 </li>
               );
             })}

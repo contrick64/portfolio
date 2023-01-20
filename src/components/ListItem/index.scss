@@ -1,17 +1,25 @@
 li {
   list-style: "• " outside;
-  
+  ul {
+    padding-left: 1rem !important;
+  }
+
   &::marker {
     font-size: 1.2em;
     margin-right: 2px;
     font-family: monospace;
   }
-  
+
   &.openable {
     list-style: "+ " outside;
   }
 
   &.opened {
     list-style: "– " outside;
+  }
+  button {
+    border: 0;
+    background-color: inherit;
+    text-align: left;
   }
 }
