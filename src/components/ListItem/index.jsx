@@ -32,6 +32,7 @@ export default memo(function ListItem(props) {
                   >
                     <ListItem
                       {...props}
+                      key={li.id + "li"}
                       data={li}
                       openListItem={props.openListItem}
                     />
