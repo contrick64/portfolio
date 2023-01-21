@@ -3,7 +3,7 @@ import { memo, useEffect, useState } from "react";
 import config from "../../Pages/config.yaml";
 import ListItem from "../ListItem";
 
-export default memo(function List() {
+export default memo(function List(props) {
   const [list, setList] = useState(() => ({
     isOpen: true,
     children: config,
@@ -57,5 +57,12 @@ export default memo(function List() {
       children: recursiveId(list),
     }));
   }, []);
-  return <ListItem key="topList" data={list} openListItem={openListItem} />;
+  return (
+    <ListItem
+      key="topList"
+      closeTray={props.closeTray}
+      data={list}
+      openListItem={openListItem}
+    />
+  );
 });

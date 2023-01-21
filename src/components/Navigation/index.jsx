@@ -25,6 +25,11 @@ export default function Navigation() {
       window.removeEventListener("resize", handleResize);
     };
   });
+
+  function toggleTray(bool = !open) {
+    setOpen(() => bool);
+  }
+
   useEffect(() => {
     if (dimensions.width >= 768) {
       setOpen(true);
@@ -37,7 +42,7 @@ export default function Navigation() {
       <Navbar className={lightIsOn ? "navdark" : "navlight"}>
         <div className="brandholder">
           <Navbar.Brand>
-            <Link id="title" to="/">
+            <Link id="title" to="/" onClick={() => toggleTray(false)}>
               <CPMLogo
                 lightIsOn={lightIsOn}
                 changeLight={(bool) => setLightIsOn(bool)}
@@ -50,7 +55,7 @@ export default function Navigation() {
           <Button
             className="p-0 px-1"
             variant="outline-dark"
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen((prev) => !prev)}
             aria-controls="collapse-list"
             aria-expanded={open}
             aria-label="expand navigation"
@@ -62,7 +67,7 @@ export default function Navigation() {
       <Collapse in={open}>
         <div className="nav-tray">
           <Container id="collapse-list">
-            <List />
+            <List closeTray={() => toggleTray(false)} />
           </Container>
         </div>
       </Collapse>

@@ -1,5 +1,4 @@
-import { nanoid } from "nanoid";
-import { memo, useEffect, useState } from "react";
+import { memo } from "react";
 import { Collapse } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./index.scss";
@@ -9,7 +8,9 @@ export default memo(function ListItem(props) {
     <>
       {props.data.value &&
         (props.data.path ? (
-          <Link to={props.data.path}>{props.data.value}</Link>
+          <Link to={props.data.path}>
+            <div onClick={props.closeTray}>{props.data.value}</div>
+          </Link>
         ) : (
           props.data.value
         ))}
@@ -29,7 +30,11 @@ export default memo(function ListItem(props) {
                     tabIndex={openable ? "0" : "-1"}
                     onClick={(e) => props.openListItem(e, li.idPath)}
                   >
-                    <ListItem data={li} openListItem={props.openListItem} />
+                    <ListItem
+                      {...props}
+                      data={li}
+                      openListItem={props.openListItem}
+                    />
                   </button>
                 </li>
               );
