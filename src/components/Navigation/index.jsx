@@ -27,7 +27,9 @@ export default function Navigation() {
   });
 
   function toggleTray(bool = !open) {
-    setOpen(() => bool);
+    if (dimensions.width < 768) {
+      setOpen(() => bool);
+    }
   }
 
   useEffect(() => {
