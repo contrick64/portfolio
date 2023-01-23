@@ -2,6 +2,8 @@
 
 This is my portfolio made in React
 
+It's hosted live at [contrick.net](https://contrick.net)
+
 It's structured around a .yaml config file and .mdx content files, with a recursively
 generated navigation list, allowing me to nest as deeply as I'd like in the config.
 
