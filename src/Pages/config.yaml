@@ -11,6 +11,8 @@
       path: Sapa
     - value: Random Poetry Generator
       path: RandomPoetry
+    - value: Scryfall Random Card Fetcher
+      path: ScryfallRandom
 
 - value: Design
   isOpen: true
