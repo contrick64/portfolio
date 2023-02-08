@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import { memo, useEffect, useState } from "react";
-import config from "../../Pages/config.yaml";
+import config from "../../Pages/_config.yaml";
 import ListItem from "../ListItem";
 
 export default memo(function List(props) {

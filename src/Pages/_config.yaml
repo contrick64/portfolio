@@ -31,3 +31,9 @@
   children:
     - value: Bleach Bloys
       path: BleachBloys
+
+- value: Video
+  isOpen: true
+  children:
+    - value: Irene H. Clark, Navajo Master Weaver
+      path: IreneClark
