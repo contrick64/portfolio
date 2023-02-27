@@ -23,7 +23,7 @@
       color: white;
     }
     &:hover,
-    &:has(:focus) {
+    &:focus-within {
       transform: scale(1.05);
       transition: transform 0.2s;
       .img-card-hover {
