@@ -1,0 +1,162 @@
+ip,gender,age,square,circle,triangle,star,heart,past,present,future
+71.233.133.194,Male,18-24,#eb7ef1,#9e1a30,#2fe12d,#fff92e,#f368b9,#ecddbb,#e1e2e5,#3d43ff
+98.217.2.222,Male,18-24,#825d17,#b3b3b3,#000000,#ede826,#ba0903,#d6ae00,none,#1a4fd1
+66.30.199.107,Female,18-24,none,none,none,#e3c42b,#dd4646,none,none,none
+47.14.13.133,Male,18-24,#f40b0b,#070ec0,#1ab300,#fff329,#f50000,#ff9b1a,#f73222,#a8fcff
+68.186.250.225,Male,45-54,none,none,none,none,none,none,none,none
+76.19.123.235,Female,18-24,#1481eb,#edcd3b,#3a785d,#faef00,#f81b1b,#916427,none,#502386
+98.110.243.31,Female,18-24,#de1725,#b06a21,#eedd44,#f5fb74,#f70830,#3015b2,none,#32730d
+73.61.53.28,Female,18-24,#000000,#fd1c1c,#3eb655,#fbfc2c,#fa1431,#0a0a0b,none,#e4a907
+67.246.18.224,Female,18-24,none,none,none,#f6f037,#b20607,#000000,#0d9fde,#deded9
+76.19.123.235,Female,55-64,#ea0b06,#2a4cf8,#04af0a,#fbfc40,#f88c8c,none,none,none
+24.61.130.91,Male,18-24,#2ac687,#dbfc55,#d43716,#d9d30d,#f184be,#1a1414,#efecec,#612e9e
+24.2.250.114,Male,18-24,#da0b27,#2753ec,#f1ec37,#e0b024,#eb1e1e,#cbc8c8,#f7b6ec,#78f2e3
+71.89.5.183,Nonbinary,18-24,#f14646,#81f339,#ffe12e,#faf5f5,#f7457f,#a1e1e8,#5c7755,#7443a3
+71.232.73.68,Female,18-24,#155fcb,#f1ef46,#e71818,#8346c8,#db1414,none,none,none
+71.232.73.68,Male,18-24,#36bff2,#eefc31,#43c837,#6219d7,#f12727,none,none,#fa94f6
+174.242.142.3,Male,18-24,#76b46a,#2c5dc9,#8d1c1c,#e425b8,#e77e94,#8a5656,#f6f3f3,none
+72.213.236.91,Female,18-24,#720d29,#3c82d3,#c27d2e,#67c32c,#f7f7f7,#631485,#f5fa70,#67e4b5
+98.118.45.55,Male,18-24,#eb0000,#004ef0,#00db1b,#fff80a,#f00000,#ff0505,#0553ff,#000000
+174.242.74.229,Male,18-24,#2c7ae8,#ee2b2b,#6bae56,#dfe47c,#ed5e93,#54b92d,#969292,#ffffff
+66.189.57.50,Male,18-24,#39ff2e,#ff2932,#225e24,#ffce24,#ff474e,none,none,none
+73.17.221.7,Female,18-24,none,#000000,#258e25,#f8eb3a,#f04c4c,#a29090,#fbf9f9,#f7eef5
+68.191.250.185,Female,18-24,#8ce3d3,#ec8e8e,#9395eb,#eef28d,#85cc7f,#000000,#39b125,#d8b246
+174.192.12.221,Male,18-24,#e20306,#2729e7,#17e82f,#e9d625,#ed6e6e,#c97108,#96d5f8,none
+24.91.156.152,Nonbinary,18-24,#eaa039,#5fc2ec,#ea5248,#207e2c,#eb5c9d,#e1be99,none,#eff9fa
+47.14.124.119,Female,18-24,#ffffff,#495aee,#d00b0b,#fbef56,#fd2626,#d0c8c8,#f674da,#f6ea55
+71.233.133.194,Female,45-54,#ffffff,#f8fd4e,#2813f1,#feff1f,#ff3029,#c39f41,none,#c6e3e7
+108.20.153.72,Male,25-34,#0519f5,#6ca843,#f88416,#ffe014,#f60704,none,none,none
+98.229.11.79,Nonbinary,18-24,#fb6809,#4c63f0,#f62323,#fcee3b,#f91f37,#5d903c,#150af5,#bb1711
+173.76.240.203,Female,18-24,#84dbf6,#1fe04e,#f2a554,#fff91f,#e72323,#2242ec,#f47c80,#7a8179
+174.192.19.102,Male,18-24,#0717cf,#ee2b2b,#15f41a,#ebe605,#f10404,#2df09b,#ffffff,#10e03a
+71.233.133.194,Male,45-54,#252cda,#c92222,#f0d233,#42b80f,#eb2828,none,none,#a6e5f7
+37.58.58.206,,,,,,,,,,
+96.252.17.71,Female,18-24,#6dabd9,#e02424,#f2cc07,#f5c219,#f6417c,none,none,#50ab3b
+75.69.167.139,Female,18-24,#d11515,#2616e9,#fcd255,#fffc5c,#ff0a4a,#ecd1ff,#00adb8,#d7ff75
+96.237.54.35,Male,18-24,#0253de,#fefe39,#21ba03,#fafafa,#b72af8,#faed4c,#f50300,#e9e9e7
+71.233.133.194,Male,18-24,#22c941,#2828d7,#f5e742,#fdf25d,#db2929,#c58511,none,#6cf4aa
+24.60.85.97,Male,18-24,#54ab5d,#656af1,#e6983d,#f6f16f,#f62323,#bdbdbd,none,#ffffff
+65.96.88.133,Female,18-24,#fc8236,#4db2ea,#2fe91c,#f5d93d,#fb2323,none,none,none
+24.233.124.254,Male,18-24,#d07616,#116bdf,#ebea19,#150f0f,#e817de,#a19191,#d0a616,#cbbebe
+75.131.148.70,Male,18-24,#4d32e2,#f40b0b,#79ea1a,#f7d440,#f45295,#f59084,#9f90bb,#12deb4
+174.247.7.199,Female,"Under 18",#1d26dd,#c71a1a,#d01b1b,#ebde1e,#f04242,#2f2828,none,#c1cfe6
+66.31.94.164,Female,"Under 18",#44ab26,#408bed,#e6ac56,#eee72f,#db1a59,#ccbea3,#226d17,#b1dadd
+70.167.58.225,Female,18-24,#1c1717,#e9ac2b,#1b6a27,#e8dc21,#fb0909,none,none,#268ab5
+71.56.30.12,Female,18-24,#f72626,#3588f8,#1e7713,#e6de19,#f362b6,none,none,none
+62.21.114.14,Male,18-24,#e79418,#fd0808,#fbf713,#fcfc40,#f320b1,#7a4b05,#bef7f8,#c7f263
+71.61.221.115,Female,25-34,#eadf0b,#b91313,#29296b,#245894,#dd27a8,#4f505f,none,#01bef9
+108.241.44.30,Nonbinary,18-24,#0a50ff,#fff13d,#ffc2f3,#fff86b,#ff2929,#cfcfcf,none,#ffffff
+209.93.86.14,Female,35-44,none,none,#f7f46e,#fcea2c,#f24e4a,#92948f,#26acdf,#83dce2
+86.161.132.196,Female,25-34,#ab20c5,#ece341,#2de63a,#efe357,#e6bcda,none,#41d84d,none
+203.213.121.45,Female,25-34,#d80e0e,#0884ba,#1aa2d1,#efe53e,#f7f7f7,none,none,none
+90.208.128.33,Female,18-24,#eecece,#8df7c4,#facd4c,#fbf446,#fe4d4d,none,none,none
+37.47.205.109,Male,18-24,#000000,#e1f750,#162fc5,#f8f41b,#fe1010,#9e9a9a,none,#ffffff
+201.21.32.5,Male,18-24,#ffffff,#df1618,#5dea5f,#ffed29,#d40c0c,none,none,none
+73.73.67.110,Female,18-24,#eb0005,#ffe94d,#fe9501,#001ee0,#e00031,#b36000,#ccfaff,#e5ffa8
+89.238.154.233,Female,18-24,#4ea7df,#44aada,#d2b614,#d6d58a,#c61027,none,none,#135f9a
+71.225.73.216,Female,"Under 18",#e38787,#faf914,#fc1d1d,#faee0a,#f7084d,#24262e,#ddcd27,#2000fa
+146.115.173.226,Male,18-24,#a634e5,#e2e046,#df210c,#feef25,#f01919,#ffc92e,#c8cbe5,#75c3f0
+220.233.83.9,Female,35-44,#300dab,#3e8410,#fcf188,#0aa7bd,#da1663,#464b44,#4a1c1c,#33664d
+82.30.72.154,Female,18-24,none,none,none,#f4da25,#f628d6,none,none,none
+204.137.226.188,Male,18-24,#ff2424,#0024d1,#fffa1a,#fded44,#ff1a1a,none,none,none
+68.53.95.254,Female,25-34,#3c864e,#2a1ad1,#b39119,#f6e523,#e71821,#f0ce98,#aae5f3,#9072f3
+5.132.119.167,Male,18-24,#274eec,#ef201a,#3eda6d,#e0d31f,#ea95e6,#6e6f77,#46d4d8,#1a34d1
+50.4.198.218,Male,18-24,#c9302c,#3b9ff7,#f2b802,#fffd1f,#f47be3,#fce6ca,#d0fbcb,#afe8f8
+89.240.119.65,Nonbinary,18-24,none,#49bcdf,#1ded41,#eae286,#e62d2d,#713d6c,#f79d1d,#cfc9c9
+99.39.66.182,Female,"Under 18",#f4c001,#0602e3,#3efb13,#facd0a,#e90730,none,#38fc1d,#3f30fd
+98.27.61.110,Female,25-34,#f7b0b0,#f7f31d,#000000,#f5ee14,#fb1313,#8c8282,#cac9c9,none
+174.54.25.222,Female,18-24,#5087ed,#f51919,#f7f740,#eaed0c,#fa0505,#6e7da0,#39d0b2,#a5fa8e
+173.183.130.129,Male,18-24,#f4ce6c,#b9f3e9,#98eb7a,#fbf146,#f47b91,#ca723f,#e1c27a,#95c8cb
+107.77.173.3,Male,35-44,#e71818,#28fb33,#ed2c2c,#f3fe1b,#f26ee1,none,none,none
+24.5.97.156,Female,"Under 18",#b55017,#dac001,#15c809,#ebcb28,#ef0606,#a3c4e6,#83e70d,#eecc20
+99.103.139.47,Female,25-34,#f47f15,#d6f4fa,#28e212,#f7f259,#f12727,#b7adbd,none,#cea9e0
+162.230.205.177,Nonbinary,"Under 18",#f5992e,#b11036,#69a319,#f6ca28,#f377aa,#d0bfd4,#955ca3,#69096c
+190.106.45.33,Male,18-24,#fef22f,#fc0324,#0cac2f,#d7e109,#f3396e,#0e5fcd,#1aff1a,#ff1f1f
+166.137.90.111,Female,18-24,#e02424,#1329e7,#f0e842,#ecb932,#eb1976,#d2bba2,#2fc7ee,#29da10
+173.19.185.26,Male,"Under 18",#2423f6,#fa1919,#23cd36,#faf329,#f80de2,#9b9292,#30c048,#9f34df
+173.88.156.230,Female,18-24,#f8aa1b,#0b72f4,#f7f976,#f6f441,#fa3d93,none,none,none
+71.37.12.243,Female,25-34,none,#2f46c6,#45873b,#e9e53f,#e42f2f,none,none,#c7c7c2
+175.176.78.222,Female,18-24,#edee3f,#3a54bb,#ed8931,#e9ce53,#e82c3e,#dcbc8f,#4b458c,#a697e2
+140.190.43.61,Male,18-24,#a12121,#3b52bf,#2fac3f,#edee20,#f41010,none,none,none
+175.158.225.51,Male,18-24,#1741c4,#141ec2,#1432c8,#292d1f,#c95959,#000000,#000000,#180d77
+75.130.151.96,Male,"Under 18",#5ae7be,#d60700,#18390e,#ffed00,#dd5f91,#b3b3b3,none,none
+120.158.188.104,Female,18-24,#8ff5f0,#fa0000,#029d0c,#fee520,#f3356c,#b49174,#f3f2f2,#13fbfb
+71.212.149.202,Female,18-24,#e9ad44,#f43434,#0d45e3,#eedc2f,#eb66e5,#82d9d7,#12b8d9,#37f6ef
+67.168.66.131,Nonbinary,18-24,#f25050,#5cd4ff,#00f030,#fcff61,#ed5e5e,#87bdcf,#dbce76,#b6f6f6
+212.117.18.140,Female,18-24,#ec2751,#2243a5,#fa920a,#f4ed62,#c94a3b,none,none,#000000
+98.169.48.167,Female,"Under 18",#fadc19,#064df9,#fb4b4b,#f7fe76,#f8359f,#dccdad,#c3e7f4,#baffb3
+98.16.29.187,Female,25-34,#df1111,#f5ec14,#1bee36,#f0f40b,#f60e21,#060404,#55baec,#fdfabf
+76.182.104.169,Female,18-24,#456af7,#ce320d,#10d516,#f2ff9e,#fb2dbf,none,none,none
+67.60.53.102,Nonbinary,25-34,#e27128,#e0de3e,#2ae556,#a1e01a,#db4379,#908989,#a48d0e,#a2f6f6
+73.136.173.194,Female,18-24,#ee1111,#122bed,#1c830b,#f7f72b,#f12727,#f49415,#47f812,#00a3ff
+82.19.173.23,Female,25-34,#0b0e0d,#d51515,#eaed4a,#ebe566,#e63d3d,none,none,none
+87.70.182.239,Male,"Under 18",#599d53,#d13129,#113dbb,#eae543,#e55138,#3f3636,none,#7addfa
+24.240.90.60,Female,"Under 18",#e90c27,#fdfcfc,#17ab22,#f8f23a,#f90606,#3043a6,none,#ffffff
+47.37.103.135,Male,25-34,#222caa,#188b44,#f2f49f,#f0f28d,#c6153b,#c9c5c5,none,#cce6eb
+172.1.229.155,Female,25-34,#7acc5c,#8c4ab5,#5ac653,#fafc45,#fc2742,none,none,none
+49.199.142.246,Male,25-34,#ea9039,#3283cd,#c8de45,#dcde59,#b44652,none,none,none
+162.197.208.86,Female,25-34,#e7272c,#3e9627,#a1e326,#f7e52b,#ee3a6b,#b8e3ea,#f4d115,#603672
+24.118.85.8,Male,25-34,#ffffff,#f70a02,#169603,#f52e2e,#f82096,none,none,none
+73.132.248.53,Male,18-24,#000000,#ffffff,#c8ff52,#fffa52,#ed4545,#fac475,none,#c7e2e5
+138.19.99.104,Male,18-24,#ff0000,#4fe8c8,#fff605,#ffe70f,#ff4747,none,none,#98d9dc
+82.43.98.148,Female,45-54,#9de1d1,#ca4021,#f9e910,#fce24a,#f61375,#966e13,#10a818,#8847f5
+49.196.21.51,Male,25-34,#1110b2,#f10e0e,#32ec3a,#fbf92d,#d00b0b,#d7d6d6,none,#9e08a0
+42.61.154.69,Female,18-24,#ffffff,#ffffff,#000000,#fffd1f,#f50d00,#999999,none,none
+203.192.78.16,Female,18-24,#f10e0e,#249af9,#fafa0f,#e2d53c,#fb83d0,none,none,none
+52.71.155.178,,,,,,,,,,
+91.33.239.49,Female,18-24,#2b36a6,#d6dc50,#f18b3b,#c336d3,#cd0e0e,none,none,none
+90.249.13.179,Female,18-24,#050505,#efe834,#56a32e,#e3c84a,#e93a9f,none,none,#7317ee
+5.56.122.107,Male,18-24,#173f5e,none,#6d6b55,none,none,none,none,none
+174.1.15.181,Female,"Under 18",#ff3333,#f13232,#ff1a1c,#f8eb54,#f448ad,#7286a1,#c6f660,#e6f1d0
+98.114.64.211,Male,45-54,#43a362,#f3f368,none,#fbfbf9,#86e6f3,none,none,none
+178.197.236.84,Female,18-24,#ff1414,#1826c3,#4eff14,#fff105,#c80e1f,none,#c70df2,#0febae
+46.61.113.174,Male,18-24,#2851bd,#d12929,#6fb757,#ffef38,#ff0f0f,#cbae86,none,#b8f7ff
+121.7.7.27,Female,18-24,#f5293e,#8df297,#fdea44,#0f0101,#fa2929,#eae1e1,none,#43fd26
+121.7.7.27,Female,45-54,#eb2d2d,none,#e6de33,#ef3434,#ef1a1a,none,none,none
+121.7.7.27,Male,45-54,#140101,#f5f4f4,#1e0000,#ede30c,#f53232,#fdfcfc,#64d5f2,#fafafa
+173.195.16.90,Female,"Under 18",#fe1616,#f9e539,#4cc030,#efdb4d,#f02424,#dea573,none,#8cf2f1
+73.246.34.17,Female,"Under 18",#ffffff,#78a6e2,#e64747,#f0d833,#ef7bc2,none,none,none
+80.187.108.23,Female,18-24,#ba1212,#4733c7,#f6f62c,#dfd226,#ad1a1a,#242361,#a2f28c,#a9eaef
+93.144.55.35,Male,"Under 18",#0d7bc9,#e31c1e,#c0f188,#ddb6d9,#e7507e,#cac1aa,#76287b,#9a71ef
+24.137.68.227,Male,"Under 18",#0a5beb,#f2cc07,#f23636,#f2ea36,#fe0606,#808080,none,#28f6e0
+174.49.34.163,Female,45-54,#efee25,#edaa12,#f08f0f,#f4f740,#e63793,none,none,#aa2ce2
+147.69.129.82,Female,18-24,#1e4f1c,#d62dfb,#f88b2a,#efea1a,#f4347c,#182c81,#dddada,#78b2e2
+41.190.31.124,Female,18-24,#000000,#000000,#000000,#000000,#000000,#000000,#000000,#000000
+99.132.115.244,Female,18-24,#e63633,#2e2bee,#5fed31,#eef21c,#f12222,none,#917050,#43acea
+88.130.54.163,Male,35-44,#40ca3f,#ffffff,#f051ca,#2344e7,#ee1111,none,none,none
+217.155.201.130,Nonbinary,35-44,#1d155b,#296a4e,#f68646,#fbf32d,#fe1010,none,none,none
+84.229.197.152,Female,25-34,#2665ab,#faf21e,#f8aa30,#f8eb0d,#e60f0f,none,none,none
+58.84.147.220,Female,25-34,#1e1980,#d41616,#fa1eec,#facc05,#f41589,#c2a689,#aec9ef,#9dbbe7
+99.203.80.89,Male,"Under 18",none,none,#136c2a,#d0ed40,#eb3d4c,none,none,#2256ce
+177.254.23.190,Male,"Under 18",#f67a23,#3f8df8,#e23c3f,#eab710,#d94a4a,#cbaf90,#c6c3c3,#13cd3f
+24.153.51.152,Female,18-24,#44a3e4,#e6ea4d,#2a9f23,#d6d82c,#d11010,none,none,none
+86.160.203.103,Male,18-24,#4aafe3,#ec2727,#68c73d,#ede11d,#ea1010,#641717,#80f628,#a41bc0
+216.116.233.130,Female,18-24,#2956d6,#f1f66f,#c72323,#f339ee,#9f46e2,#857b4c,#7dd5ed,#9ee68f
+47.152.205.212,Female,"Under 18",none,none,#f7f906,#fef69a,#fb1313,#c8c9cb,none,#83ddfc
+162.196.86.105,Female,25-34,#e31616,#2357fb,#e87017,#efe13e,#f52e2e,none,none,none
+174.119.252.165,Female,18-24,#3bcee8,#ef0b0b,#64ec41,#fff566,#ef3e6a,#bc6c29,none,#84eafb
+84.250.84.118,Female,25-34,#030303,#e3e3e3,#1c3ed4,#faeb47,#f10909,#c0bcd2,#9ef14b,#61e0d2
+80.107.21.158,Male,"Under 18",#8fc32c,#900909,#35bb88,#f4c810,#d91c1c,none,none,#adaeae
+217.44.72.141,Female,"Under 18",#192eeb,#f4f532,#de1212,#fcfd35,#f61e1e,none,none,none
+24.22.184.247,Female,18-24,#f50095,#2f05a8,#e6bd05,#a82de6,#056f01,none,none,#0d85f8
+72.203.102.62,Male,25-34,#f1f42a,#1f3edb,#f529cc,#f8f420,#db0a0a,#f4a210,none,#1863dc
+86.149.85.198,Female,"Under 18",#f80d0d,#2630f2,#eba360,#f7e94b,#e60a0a,#7315d1,#ed2c2c,#369eec
+172.58.35.104,Male,18-24,#eb0f0f,#2420e9,#347f3c,#f0dc14,#ed1d1d,#0c0d0d,none,#a7a7af
+174.6.81.143,Male,18-24,none,none,#e71a0d,#ffe347,#e71313,none,none,#a3c9e0
+192.181.169.224,Female,18-24,#eea5bd,#fae966,#3505ad,#f2e5bb,#f54d82,#afbac0,#8dc3b2,#e1c6f5
+24.64.150.201,Female,18-24,#121212,#dc1e1e,#329a53,#e7d840,#e75f74,#c5bebe,none,none
+68.100.152.47,Female,18-24,#eea811,#066bd0,#8239f3,#de1726,#f5e747,#683737,#39a01c,#f23adf
+175.140.194.53,Female,"Under 18",#f0ee47,#ee4444,#f0e82d,#fbed13,#eb1414,#0f0e3a,#7cf127,#3cf6ec
+82.1.183.49,Male,18-24,#e12dda,#2c29d1,#c6ed35,#f0f150,#eb195b,#766d60,#8affc9,#e3ede5
+47.4.242.29,Female,"Under 18",#f13f37,#f6f46a,#5468f2,#fff05c,#f15b5b,#fbe0a7,none,#f5b6fb
+24.88.235.164,Male,"Under 18",#d1c1c1,#8eeff6,#bdf132,#fad32e,#df5d78,#92b5ce,#ffec00,#06f8f9
+85.203.190.31,Female,25-34,#1b99de,#f67984,#eb8f0f,#f0eec7,#b61111,#b7a4b6,#3149aa,#3fee96
+107.77.68.80,Female,18-24,#d88891,#5b775a,#f8c4ee,#c6c439,#f372de,#472929,#e35045,#2dbe3c
+47.145.195.229,Female,18-24,#ec1313,#0a54e6,#f9e32f,#c79e1a,#f80da9,#7bd7e5,#a9dea1,#89e1e6
+71.199.42.25,Female,25-34,#ec473c,#2240ec,#ec4646,#f6f53c,#f1c5f1,none,none,#83cafb
+101.166.205.252,Male,"Under 18",#46ddd4,#e71331,#f59829,#ede121,#db0f3f,#79634e,#ab97d3,#aac3e4
+100.0.144.177,Male,55-64,none,#db3333,#000000,#e7f042,#ec3254,#957575,none,#ffffff
+173.54.215.237,Male,"Under 18",#4bd1d2,#2a62fe,#ffee6b,#fff54d,#ff7090,#fbee6a,#008a16,#7affe9
+167.57.124.92,Male,18-24,#3bacf7,#e01010,#f8d52a,#f8d935,#ec0e0e,#f28e21,#5bf651,#22fcf7
+188.195.69.31,Female,18-24,#30a7e8,#3ab427,#ef9f2e,#eff240,#de1212,none,none,none
+84.245.121.101,Male,"Under 18",#e7de74,#ef3434,#eede63,#f3e65e,#e90707,#bfcded,none,#d9d9d4
