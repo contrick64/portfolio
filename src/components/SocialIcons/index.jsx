@@ -6,9 +6,6 @@ export default function SocialIcons(props) {
       <a href="https://github.com/Contrick64" title="Github">
         <i className="devicon-github-plain" />
       </a>
-      <a href="https://www.linkedin.com/in/contrick/" title="LinkedIn">
-        <i className="devicon-linkedin-plain" />
-      </a>
       <a href="mailto:connor@murphysites.com" title="email">
         <svg
           fill="currentColor"
